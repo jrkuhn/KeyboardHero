@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <div id="menu">
+	 <input type="button" id="play" onClick="keyhero.init()" value="Try Again">   
+    </div>
+    <meta charset="UTF-8">
+    <title>Game Over</title>
+    <link href='//fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <style>
+        body { margin: 0;
+		background-color: #dee0e5;}
+        canvas { width: 100%; height: 100% }
+
+		#score{background-color: #dee0e5}
+		
+		#text{font-size: 50px}
+		
+        .score{
+            font-family: 'Orbitron', sans-serif;
+            font-size: 24px;
+            color: #FF7373;
+            position: absolute;
+            text-align: center;
+            left: 400px;
+            top: 500px;
+        }
+
+        input[type="button"]{
+		 
+            border: none;
+            outline: none;
+            text-decoration: none;
+            border-radius: 5px;
+            padding: 15px 20px;
+            background-color: #FF7373;
+            box-shadow: 2px 5px 2px 0px #CE4646;
+            margin: 0 auto;
+            font-size: 24px;
+            color: #F3F2F2;
+            position: absolute;
+            text-align: center;
+            top: 300px;
+            right: 47.5vw;
+            display: inline-block;
+            cursor: pointer;
+        }
+        input[type="button"]:active {
+            -webkit-transform: translate(0px, 5px);
+            transform: translate(0px, 5px);
+            box-shadow: 0px 1px 0px 0px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div style="text-align: center;"  id="score">
+        <span id="points">Score: 0 </span>
+    </div>
+	
+	<div style="text-align: center;" id="text">
+      GAME OVER<br>
+    </div>
+	
+    <script src="build/three.js"></script>
+    <script src="build/keyhero.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <audio id="sound1"> <source src="build/sound1.wav"> </audio>
+    <audio id="sound2"> <source src="build/sound2.wav"> </audio>
+    <audio id="sound3"> <source src="build/sound3.wav"> </audio>
+    <audio id="sound4"> <source src="build/sound4.wav"> </audio>
+    <audio id="sound5"> <source src="build/sound5.wav"> </audio>
+    <audio id="slide"> <source src="build/Slide.wav"> </audio>
+
+    <script>
+	$("#score").hide();
+
+
+    </script>
+
+</body>
+</html>
